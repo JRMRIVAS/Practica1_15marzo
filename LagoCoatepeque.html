@@ -38,23 +38,27 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis culpa reiciendis exercitationem assumenda, fuga ab perferendis minima ducimus voluptatibus quia error expedita provident. Veritatis asperiores minus cupiditate, impedit numquam iusto!
     </p>
     <br>
-    <p>Si deseas conocer mas informacion sobre la fascinante historia del lago puedes dar click en el siguiente enlace</p>
+    <p>Si deseas conocer más información sobre la fascinante historia del lago puedes dar click en el siguiente botón</p>
     <form action="https://es.wikipedia.org/wiki/Lago_de_Coatepeque" method="get" target="_blank">
-    <button>Para conocer mas haz click aqui!</button>
+    <button>Para conocer más haz click aqui!</button>
    </form>
   </section>
   <footer>
-    <h4><legend>Para recibir mas noticias sobre sitios turisticos puedes suscribirte</legend></h4>
-    <label>Nombre</label>
-      <input type="text" name="nombre">
+    <h4><legend>Para recibir más noticias sobre sitios turísticos puedes suscribirte</legend></h4>
+    <form action="#" method="post">
+    <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre">
     <br>
-    <label>Correo</label>
-      <input placeholder="email@example.com" type="email" name="correo">
+    <label for="correo">Correo</label>
+      <input placeholder="email@example.com" type="email" name="correo" id="correo">
     <br>
+    <label for="Opciones">De donde eres</label>
     <select name="Opciones">
-      <option value="nacional">Nacional</option>
+      <option value="nacional">El Salvador</option>
       <option value="extranjero">Extranjero</option>
     </select>
+    </form>
+    <br>
     <form action="./suscrito.html" method="get">  
       <button>Suscribirme</button>
     </form>

@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lugares turisticos</title>
+  <title>Lugares turísticos</title>
 </head>
 <body>
   <header>
-    <h1>Lugares turisticos de El Salvador</h1>
+    <h1>Lugares turísticos de El Salvador</h1>
   </header>
   <nav>
     <ul>
@@ -33,8 +33,8 @@
       </article>
       <article>
         <p>
-            En esta sitio web encontraras los lugares turisticos mas visitados de El Salvador!
-            Podras visualizar imagenes, detalles y direccion de dichos lugares...
+            En esta sitio web encontrarás los lugares turísticos más visitados de El Salvador!
+            Podrás visualizar imagenes, detalles y dirección de dichos lugares...
         </p>
       </article>
     </section>
@@ -42,23 +42,53 @@
        <img src="./Imagenes/paisajegif.gif" alt="Paisaje gif">
     </section>
     <aside>
-      <p>Para conocer sobre otros sitios turisticos puedes presionar el siguiente enlace.
-      <a href="https://turismo.sv/" target="_blank">Click Aqui</a>
+      <p>Si quieres conocer sobre otros sitios turísticos puedes presionar el siguiente enlace.
+      <a href="https://turismo.sv/" target="_blank">Click Aquí</a>
+      </p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend><h4>Ayúdame a responder la siguiente encuesta</h4></legend>
+          <p>¿Cuál ha sido el lugar turistico que mas te ha gustado?</p>
+          <input type="radio" value="pital" id="pital" name="encuesta">
+          <label for="pital">El Pital</label>
+          <input type="radio" value="rflores" id="rflores" name="encuesta">
+          <label for="rflores">Ruta de las flores</label>
+          <input type="radio" id="lcoa" name="encuesta">
+          <label for="lcoa">Lago de Coatepeque</label>
+          <br>
+          <p>¿Qué fue lo que más te gustó?</p>
+          <input type="text" placeholder="Escribe aquí" maxlength="40">
+          <br>
+          <p>¿De la siguiente lista que otro lugar te gustaría conocer?</p>
+          <select name="" id="" required>
+            <option value="">El Cerro Verde</option>
+            <option value="">Playa El Tunco</option>
+            <option value="">Cento historico</option>
+          </select>
+          <br><br>
+          <form action="#" method="get">
+            <button type="reset" title="Volver Arriba">Enviar</button>
+          </form>
+        </fieldset>
+      </form>
     </aside>
-    </p>
   </main>
   <footer>
-      <h4><legend>Para recibir mas noticias sobre sitios turisticos puedes suscribirte</legend></h4>
-      <label>Nombre</label>
-        <input type="text" name="nombre">
+      <h4><legend>Para recibir más noticias sobre sitios turísticos puedes suscribirte</legend></h4>
+      <form action="#" method="post">
+      <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
       <br>
-      <label>Correo</label>
-        <input placeholder="email@example.com" type="email" name="correo">
+      <label for="correo">Correo</label>
+        <input placeholder="email@example.com" type="email" name="correo" id="correo">
       <br>
+      <label for="Opciones">De donde eres</label>
       <select name="Opciones">
-        <option value="nacional">Nacional</option>
+        <option value="nacional">El Salvador</option>
         <option value="extranjero">Extranjero</option>
       </select>
+      </form>
+      <br>
       <form action="./suscrito.html" method="get">  
         <button>Suscribirme</button>
       </form>

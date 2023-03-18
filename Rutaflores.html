@@ -28,9 +28,6 @@
   </nav>
   <section>
     <h2>Paisajes</h2>
-    <img src="./Imagenes/lugares.jpg" alt="Lugares turisticos">
-    <img src="./Imagenes/paisaje.jpg" alt="Paisaje natural">
-    <img src="./Imagenes/paisaje2.jpg" alt="cascada">
     <img src="./Imagenes/flores.webp" alt="gif de flores">
   </section>
   <section>
@@ -54,36 +51,40 @@
       </thead>
       <tbody>
         <tr>
-          <td>Jardin de Celeste</td>
+          <td>Jardín de Celeste</td>
           <td>Sopa de Gallina</td>
-          <td>6 dolares</td>
+          <td>$6.00</td>
         </tr>
         <tr>
           <td>Entre Nubes</td>
           <td>Carne Asada</td>
-          <td>7 dolares</td>          
+          <td>$7.00</td>          
         </tr>
         <tr>
           <td>Villa El Carmen</td>
           <td>Pupusas</td>
-          <td>1.50 dolares</td>
+          <td>$1.50</td>
         </tr>
       </tbody>
       </table>
     </article>
   </section>
   <footer>
-    <h4><legend>Para recibir mas noticias sobre sitios turisticos puedes suscribirte</legend></h4>
-    <label>Nombre</label>
-      <input type="text" name="nombre">
+    <h4><legend>Para recibir más noticias sobre sitios turísticos puedes suscribirte</legend></h4>
+    <form action="#" method="post">
+    <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre">
     <br>
-    <label>Correo</label>
-      <input placeholder="email@example.com" type="email" name="correo">
+    <label for="correo">Correo</label>
+      <input placeholder="email@example.com" type="email" name="correo" id="correo">
     <br>
+    <label for="Opciones">De donde eres</label>
     <select name="Opciones">
-      <option value="nacional">Nacional</option>
+      <option value="nacional">El Salvador</option>
       <option value="extranjero">Extranjero</option>
     </select>
+    </form>
+    <br>
     <form action="./suscrito.html" method="get">  
       <button>Suscribirme</button>
     </form>

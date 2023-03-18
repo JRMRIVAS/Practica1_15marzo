@@ -37,17 +37,21 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30917.34692455247!2d-89.12600760000001!3d14.388589600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63a22e2515544b%3A0x29d828ff57aed1dd!2sCerro%20El%20Pital!5e0!3m2!1ses!2ssv!4v1678920787827!5m2!1ses!2ssv" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
   <footer>
-    <h4><legend>Para recibir mas noticias sobre sitios turisticos puedes suscribirte</legend></h4>
-    <label>Nombre</label>
-      <input type="text" name="nombre">
+    <h4><legend>Para recibir más noticias sobre sitios turísticos puedes suscribirte</legend></h4>
+    <form action="#" method="post">
+    <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre">
     <br>
-    <label>Correo</label>
-      <input placeholder="email@example.com" type="email" name="correo">
+    <label for="correo">Correo</label>
+      <input placeholder="email@example.com" type="email" name="correo" id="correo">
     <br>
+    <label for="Opciones">De donde eres</label>
     <select name="Opciones">
-      <option value="nacional">Nacional</option>
+      <option value="nacional">El Salvador</option>
       <option value="extranjero">Extranjero</option>
     </select>
+    </form>
+    <br>
     <form action="./suscrito.html" method="get">  
       <button>Suscribirme</button>
     </form>
